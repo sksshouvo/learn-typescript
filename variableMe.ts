@@ -10,4 +10,4 @@ console.log(pi)
 let loggedIn: boolean = false
 console.log(loggedIn)
 
-export {greetings, pi, loggedIn}
+// export {}
