@@ -1,10 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // string type
-var greetings = "Hello World";
+let greetings = "Hello World";
 console.log(greetings);
 // number type
-var pi = 3.14159265359;
+let pi = 3.14159265359;
 console.log(pi);
 // boolean type
-var loggedIn = false;
+let loggedIn = false;
 console.log(loggedIn);
 // export {}
+//# sourceMappingURL=variableMe.js.map
