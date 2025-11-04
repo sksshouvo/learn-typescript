@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function getVal(myVal) {
     if (myVal > 5) {
         return true;
@@ -5,17 +7,26 @@ function getVal(myVal) {
     return "200 OK";
 }
 console.log(getVal(10));
-var getHello = function (name) {
+const getHello = (name) => {
     return name;
 };
 console.log(getHello("Hello Salman Kabir"));
-var heroName;
-var heros = ["SuperMan", "BatMan", "Flash"];
-heroName = heros.map(function (hero) {
+let heroName;
+const heros = ["SuperMan", "BatMan", "Flash"];
+heroName = heros.map((hero) => {
     if (hero === "Flash") {
-        return "The fastest man alive is ".concat(hero);
+        return `The fastest man alive is ${hero}`;
     }
-    return "This is the ultimate hero ".concat(hero);
+    return `This is the ultimate hero ${hero}`;
 });
 console.log(heroName);
+function consoleError(errorMsg) {
+    console.log(errorMsg);
+}
+consoleError("Something Went Wrong, Please Contact Service provider!");
+function handleError(msg) {
+    throw new Error(msg);
+}
+handleError("Your syntax is wrong!");
 // export {}
+//# sourceMappingURL=advanceFunction.js.map

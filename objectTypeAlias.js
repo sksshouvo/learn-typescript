@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function createUser(user) {
     if (user.email == "sksshouvo2@gmail.com") {
         return { name: "Salman kabir", email: user.email, isActive: true };
@@ -5,3 +7,4 @@ function createUser(user) {
     return { name: "", email: "", isActive: false };
 }
 console.log(createUser({ name: "Salman Kabir", email: "sksshouvo2@gmail.com", isActive: true }));
+//# sourceMappingURL=objectTypeAlias.js.map

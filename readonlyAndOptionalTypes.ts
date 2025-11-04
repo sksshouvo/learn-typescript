@@ -1,4 +1,4 @@
-// read only and optional object type example
+// read only object type example
 type book = {
     readonly _id: string,
     name: string,
@@ -13,5 +13,19 @@ let bookDeatils: book = {
 }
 
 bookDeatils.name = "Holud Himu kalo Rab"
-bookDeatils._id = "321123"
-// read only and optional object type example
+// bookDeatils._id = "321123" (This is to demonstrate that how works readonly)
+// read only object type example
+
+// optional object type example
+type cardNumber = {
+    cardNumber: string
+}
+
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv : number
+}
+// optional object type example
